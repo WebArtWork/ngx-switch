@@ -2,10 +2,12 @@
 
 ## Usage
 ```html
-<wswitch label="Sound Notification" [(wngModel)]="value.switch" (wngModelChange)="test()"></wswitch>
+<wswitch label="Sound Notification" [(model)]="value.switch" (modelChange)="test()"></wswitch>
 ```
 
 ## Arguments
 ```
 label: string | Displayed text
+model: boolean | Returns the state of switch
+modelChange | Called when model changes
 ```

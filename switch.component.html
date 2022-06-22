@@ -1,18 +1,7 @@
-<span class="switch"
-[class.checked]="checked"
-[class.disabled]="disabled"
-[class.switch-large]="size === 'large'"
-[class.switch-medium]="size === 'medium'"
-[class.switch-small]="size === 'small'"
-[class.switch-labeled]="!!labelOn || !!labelOff"
-[style.background-color]="getColor()"
-[style.border-color]="getColor('borderColor')"
->
-<input type="checkbox" id="enabled" name="enabled" [checked]="checked" style="display: none;" aria-invalid="false">
-<small [style.background]="getColor('switchColor')">
-</small>
-<span class="switch-text" *ngIf="!!labelOn || !!labelOff">
-  <span class="on" [innerHtml]="labelOn"></span>
-  <span class="off" [innerHtml]="labelOff"></span>
-</span>
-</span>
+<label>
+	<div class="w-switch__toggle">
+		<input class="w-switch__input" type="checkbox" [(ngModel)]="wngModel" (ngModelChange)="wngModelChange.emit(wngModel)">
+		<span class="w-switch__slider _round"></span>
+	</div>
+	<div class="w-switch__text">{{label}}</div>
+</label>

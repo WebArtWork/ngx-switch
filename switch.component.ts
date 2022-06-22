@@ -5,9 +5,9 @@ import { Component, Input, Output, EventEmitter } from '@angular/core';
 	styleUrls: ['./switch.component.scss']
 })
 export class SwitchComponent{
-	@Input() model;
+	@Input() wngmodel;
 	@Input() label;
-	@Output() modelChange = new EventEmitter()
+	@Output() wngModelChange = new EventEmitter();
 
 	constructor() {}
 }

@@ -11,6 +11,7 @@
     &__input {
         display: none;
         &:checked+.w-switch__slider {
+            transition-delay: 0.12s;
             background-color: rgb(47, 207, 45);
         }
         &:focus+.w-switch__slider {
@@ -19,6 +20,10 @@
         &:checked+.w-switch__slider:before {
             transform: translate(13px, -50%);
             background-color: var(--c-white);
+        }
+        &._disabled {
+            cursor: not-allowed;
+            opacity: .25;
         }
     }
     &__slider {
@@ -54,5 +59,9 @@
         line-height: calc(#{var(--fs)} - 2px);
         letter-spacing: var(--letter-spacing);
         color: var(--c-text);
+    }
+    .disabled {
+        opacity: .50;
+        cursor: not-allowed;
     }
 }

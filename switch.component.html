@@ -1,7 +1,9 @@
 <label class="w-switch">
 	<div class="w-switch__toggle">
-		<input class="w-switch__input" type="checkbox" [(ngModel)]="wngModel" (ngModelChange)="wngModelChange.emit(wngModel)">
-		<span class="w-switch__slider _round"></span>
+		<input class="w-switch__input" [attr.disabled]="disabled" [attr.checked]="checked" [attr.id]="id" [attr.name]="name" [attr.required]="required" type="checkbox" [(ngModel)]="wngModel" (ngModelChange)="wngModelChange.emit(wngModel)">
+		<span class="w-switch__slider _round"
+		[class.disabled]="disabled"
+		></span>
 	</div>
 	<div class="w-switch__text">{{label}}</div>
 </label>

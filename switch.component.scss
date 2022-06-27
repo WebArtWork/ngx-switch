@@ -21,10 +21,6 @@
             transform: translate(13px, -50%);
             background-color: var(--c-white);
         }
-        &._disabled {
-            cursor: not-allowed;
-            opacity: .25;
-        }
     }
     &__slider {
         position: absolute;
@@ -61,7 +57,7 @@
         color: var(--c-text);
     }
     .disabled {
-        opacity: .50;
+        opacity: .25;
         cursor: not-allowed;
     }
 }

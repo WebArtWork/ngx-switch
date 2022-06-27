@@ -17,15 +17,14 @@ export class SwitchComponent{
 	@Input() label;
 	@Output() wngModelChange = new EventEmitter()
 	@Input() required: boolean
-	public _checked: boolean = true;
+	public _checked: boolean = false;
 	@Input() set checked(v: boolean) {
 		this._checked = v !== false;
 	}
 	get checked() {
 		return this._checked;
-	}	CheckEvent(){
-	  this.checked =!this.checked
-	}	public _disabled: boolean;
+	}	
+	private _disabled: boolean;
 	@Input() set disabled(v: boolean) {
 		this._disabled = v !== false;
 	}

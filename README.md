@@ -8,12 +8,8 @@ waw add ngx-switch
 ### Usage
 ```html
 <wswitch></wswitch>
-<wswitch disabled></wswitch>
-<wswitch id="someID"></wswitch>
-<wswitch name="someNAME"></wswitch>
-<wswitch required="someREQUIRED"></wswitch>
-<wswitch label="Sound Notification" [(model)]="value.switch" (modelChange)="test()"></wswitch>
-<wswitch [checked]="true"></wswitch>
+<wswitch ></wswitch>
+<wswitch [(model)]="value.switch" (modelChange)="test()" label="Sound Notification" name="someNAME" id="someID" [checked]="true" required="someREQUIRED" disabled></wswitch>
 ```
 
 ## Arguments

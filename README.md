@@ -5,39 +5,15 @@
 ```sh
 waw add ngx-switch
 ```
-
-## Usage
+### Examples
 ```html
 <wswitch></wswitch>
-```
-### Disabled
-
-```html
 <wswitch disabled></wswitch>
-```
-### ID
-
-```html
 <wswitch id="someID"></wswitch>
-```
-### Name
-
-```html
 <wswitch name="someNAME"></wswitch>
-```
-### Required
-
-```html
 <wswitch required="someREQUIRED"></wswitch>
-```
-### Checked
-
-```html
-<wswitch [checked]="true"></wswitch>
-```
-### Label
-```html
 <wswitch label="Sound Notification" [(model)]="value.switch" (modelChange)="test()"></wswitch>
+<wswitch [checked]="true"></wswitch>
 ```
 
 ## Arguments

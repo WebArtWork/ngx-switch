@@ -5,7 +5,7 @@
 ```sh
 waw add ngx-switch
 ```
-### Examples
+### Usage
 ```html
 <wswitch></wswitch>
 <wswitch disabled></wswitch>

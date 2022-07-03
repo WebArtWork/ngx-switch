@@ -6,18 +6,26 @@
 waw add ngx-switch
 ```
 ### Usage
+```
+import { SwitchModule } from 'src/app/modules';
+@NgModule({
+	imports: [
+		SwitchModule
+	]
+})
+
+```
+
 ```html
-<wswitch [(model)]="value.switch" (modelChange)="test()" label="Sound Notification" name="someNAME" id="someID" [checked]="true" required="someREQUIRED" disabled></wswitch>
+<wswitch disabled="true" label="Sound Notification" [(wngModel)]="value.switch" (wngModelChange)="function()"></wswitch>
 ```
 
 ## Arguments
 ```
 id: string
 name: string
-required: boolean
-checked: boolean (default: false)
 disabled: boolean (default: false)
 label: string | Displayed text
-model: boolean | Returns the state of switch
-modelChange | Called when model changes
+wngModel: boolean | Returns the state of switch
+wngModelChange | Called when model changes
 ```
